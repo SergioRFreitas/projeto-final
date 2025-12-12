@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos - Meu Portfólio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"> Seu Nome </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="display-4 fw-bold mb-3">Meus Projetos</h1>
+              <p class="lead text-muted">
+                Conheça alguns dos trabalhos que desenvolvi
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAROUSEL - COMPONENTE OBRIGATÓRIO -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 mx-auto">
+              <div
+                id="carouselProjetos"
+                class="carousel slide shadow"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjetos"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjetos"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselProjetos"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img
+                      src="https://placehold.co/1200x600/0d6efd/ffffff?text=Projeto+Website+Responsivo"
+                      class="d-block w-100"
+                      alt="Projeto 1"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+                    >
+                      <h5>Website Responsivo Completo</h5>
+                      <p>
+                        Site desenvolvido com HTML5, CSS3 e Bootstrap 5,
+                        totalmente responsivo.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="https://placehold.co/1200x600/198754/ffffff?text=Landing+Page+Moderna"
+                      class="d-block w-100"
+                      alt="Projeto 2"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+                    >
+                      <h5>Landing Page Moderna</h5>
+                      <p>
+                        Página de captura com design moderno e chamadas para
+                        ação efetivas.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="https://placehold.co/1200x600/dc3545/ffffff?text=Portfolio+Online"
+                      class="d-block w-100"
+                      alt="Projeto 3"
+                    />
+                    <div
+                      class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3"
+                    >
+                      <h5>Portfólio Profissional</h5>
+                      <p>
+                        Portfólio online showcasing projetos e habilidades
+                        profissionais.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controles -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselProjetos"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselProjetos"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARDS DE PROJETOS DETALHADOS -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="display-6 fw-bold mb-3">Detalhes dos Projetos</h2>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Projeto 1 - Card -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="https://placehold.co/600x300/0d6efd/ffffff?text=Projeto+1"
+                  class="card-img-top"
+                  alt="Projeto 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Website Corporativo</h5>
+                  <p class="card-text text-muted">
+                    Website institucional completo com seções de sobre,
+                    serviços, portfólio e contato. Desenvolvido com foco em
+                    performance e SEO.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-primary me-1">HTML5</span>
+                    <span class="badge bg-primary me-1">CSS3</span>
+                    <span class="badge bg-primary me-1">Bootstrap</span>
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projeto1Modal"
+                  >
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projeto 2 - Card -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="https://placehold.co/600x300/198754/ffffff?text=Projeto+2"
+                  class="card-img-top"
+                  alt="Projeto 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">E-commerce Responsivo</h5>
+                  <p class="card-text text-muted">
+                    Loja virtual com catálogo de produtos, carrinho de compras e
+                    checkout. Interface moderna e totalmente responsiva.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-success me-1">HTML5</span>
+                    <span class="badge bg-success me-1">Bootstrap</span>
+                    <span class="badge bg-success me-1">JavaScript</span>
+                  </div>
+                  <button
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projeto2Modal"
+                  >
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projeto 3 - Card -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="https://placehold.co/600x300/dc3545/ffffff?text=Projeto+3"
+                  class="card-img-top"
+                  alt="Projeto 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Dashboard Administrativo</h5>
+                  <p class="card-text text-muted">
+                    Painel administrativo com gráficos, tabelas e gerenciamento
+                    de dados. Design limpo e intuitivo.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-danger me-1">Bootstrap</span>
+                    <span class="badge bg-danger me-1">Charts.js</span>
+                    <span class="badge bg-danger me-1">JavaScript</span>
+                  </div>
+                  <button
+                    class="btn btn-danger"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projeto3Modal"
+                  >
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projeto 4 - Card -->
+            <div class="col-12 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="https://placehold.co/600x300/ffc107/ffffff?text=Projeto+4"
+                  class="card-img-top"
+                  alt="Projeto 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Blog Pessoal</h5>
+                  <p class="card-text text-muted">
+                    Blog com sistema de posts, categorias e comentários. Layout
+                    responsivo e otimizado para leitura.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge bg-warning text-dark me-1">HTML5</span>
+                    <span class="badge bg-warning text-dark me-1">CSS3</span>
+                    <span class="badge bg-warning text-dark me-1"
+                      >Bootstrap</span
+                    >
+                  </div>
+                  <button
+                    class="btn btn-warning text-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projeto4Modal"
+                  >
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Seu Nome</h5>
+            <p class="text-muted">
+              Desenvolvedor web apaixonado por criar experiências digitais
+              incríveis.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-muted text-decoration-none"
+                  >Início</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="sobre.html" class="text-muted text-decoration-none"
+                  >Sobre</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="projetos.html" class="text-muted text-decoration-none"
+                  >Projetos</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="contato.html" class="text-muted text-decoration-none"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Redes Sociais</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white text-decoration-none">GitHub</a>
+              <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+              <a href="#" class="text-white text-decoration-none">Instagram</a>
+              <a href="#" class="text-white text-decoration-none">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 text-muted">
+              &copy; 2024 <strong>Seu Nome</strong>. Todos os direitos
+              reservados.
+            </p>
+            <p class="mb-0 text-muted small">Desenvolvido usando Bootstrap 5</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAIS DOS PROJETOS - COMPONENTE OBRIGATÓRIO -->
+    <!-- Modal Projeto 1 -->
+    <div class="modal fade" id="projeto1Modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">Website Corporativo</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://placehold.co/800x400/0d6efd/ffffff?text=Screenshot+Completo"
+              class="img-fluid rounded mb-3"
+              alt="Screenshot"
+            />
+            <h6 class="fw-bold">Sobre o Projeto</h6>
+            <p>
+              Website institucional desenvolvido para uma empresa fictícia, com
+              design moderno e responsivo.
+            </p>
+            <h6 class="fw-bold mt-3">Tecnologias Utilizadas</h6>
+            <ul>
+              <li>HTML5 Semântico</li>
+              <li>CSS3 com Flexbox e Grid</li>
+              <li>Bootstrap 5 para responsividade</li>
+              <li>Git para controle de versão</li>
+            </ul>
+            <h6 class="fw-bold mt-3">Funcionalidades</h6>
+            <ul>
+              <li>Navegação responsiva</li>
+              <li>Formulário de contato</li>
+              <li>Galeria de imagens</li>
+              <li>SEO otimizado</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <a href="#" class="btn btn-primary">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Projeto 2 -->
+    <div class="modal fade" id="projeto2Modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title">E-commerce Responsivo</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://placehold.co/800x400/198754/ffffff?text=Screenshot+E-commerce"
+              class="img-fluid rounded mb-3"
+              alt="Screenshot"
+            />
+            <h6 class="fw-bold">Sobre o Projeto</h6>
+            <p>
+              Loja virtual completa com catálogo de produtos e carrinho de
+              compras funcional.
+            </p>
+            <h6 class="fw-bold mt-3">Recursos</h6>
+            <ul>
+              <li>Catálogo de produtos com filtros</li>
+              <li>Carrinho de compras interativo</li>
+              <li>Sistema de checkout</li>
+              <li>Design mobile-first</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <a href="#" class="btn btn-success">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Projeto 3 -->
+    <div class="modal fade" id="projeto3Modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-white">
+            <h5 class="modal-title">Dashboard Administrativo</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://placehold.co/800x400/dc3545/ffffff?text=Screenshot+Dashboard"
+              class="img-fluid rounded mb-3"
+              alt="Screenshot"
+            />
+            <h6 class="fw-bold">Sobre o Projeto</h6>
+            <p>
+              Painel administrativo com visualização de dados e gerenciamento de
+              conteúdo.
+            </p>
+            <h6 class="fw-bold mt-3">Características</h6>
+            <ul>
+              <li>Dashboard com métricas</li>
+              <li>Tabelas de dados</li>
+              <li>Gráficos interativos</li>
+              <li>Interface intuitiva</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <a href="#" class="btn btn-danger">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Projeto 4 -->
+    <div class="modal fade" id="projeto4Modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-warning text-dark">
+            <h5 class="modal-title">Blog Pessoal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="https://placehold.co/800x400/ffc107/ffffff?text=Screenshot+Blog"
+              class="img-fluid rounded mb-3"
+              alt="Screenshot"
+            />
+            <h6 class="fw-bold">Sobre o Projeto</h6>
+            <p>
+              Blog pessoal com sistema de posts e categorias, otimizado para
+              leitura.
+            </p>
+            <h6 class="fw-bold mt-3">Funcionalidades</h6>
+            <ul>
+              <li>Sistema de posts</li>
+              <li>Categorias e tags</li>
+              <li>Comentários</li>
+              <li>Busca de conteúdo</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <a href="#" class="btn btn-warning text-dark">Ver no GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

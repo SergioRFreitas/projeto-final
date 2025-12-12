@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags obrigatórias -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título da página - PERSONALIZE AQUI -->
+    <title>Sobre Mim - Meu Portfólio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== NAVBAR - COMPONENTE OBRIGATÓRIO ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"> Seu Nome </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MAIN - Tag semântica ========== -->
+    <main>
+      <!-- ========== SOBRE MIM - SEÇÃO PRINCIPAL ========== -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h1 class="display-4 fw-bold mb-3">Sobre Mim</h1>
+              <p class="lead text-muted">Conheça minha trajetória e paixões</p>
+            </div>
+          </div>
+
+          <!-- Uso do Grid System: row + col -->
+          <div class="row align-items-center">
+            <!-- Coluna responsiva: 100% mobile, 50% desktop -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+              <!-- Imagem - PERSONALIZE AQUI com sua foto -->
+              <img
+                src="https://placehold.co/500x500/198754/ffffff?text=Sua+Foto"
+                alt="Foto de perfil"
+                class="img-fluid rounded shadow"
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+              <!-- Uso de classes de tipografia -->
+              <h2 class="h3 fw-bold mb-3">Olá! Prazer em conhecê-lo</h2>
+              <p class="lead text-muted mb-3">
+                Estudante apaixonado por tecnologia e desenvolvimento web
+              </p>
+              <!-- PERSONALIZE AQUI: sua biografia -->
+              <p class="mb-3">
+                Olá! Meu nome é <strong>[Seu Nome]</strong> e estou em uma
+                jornada empolgante no mundo do desenvolvimento web. Atualmente,
+                estou aprendendo HTML, CSS e Bootstrap para criar sites modernos
+                e responsivos.
+              </p>
+              <p class="mb-3">
+                Minha paixão é transformar ideias criativas em experiências
+                digitais incríveis. Estou sempre buscando aprender novas
+                tecnologias e aprimorar minhas habilidades.
+              </p>
+              <p class="mb-4">
+                Acredito que o código bem escrito pode fazer a diferença na vida
+                das pessoas, e é isso que me motiva todos os dias a continuar
+                estudando e praticando.
+              </p>
+
+              <!-- Botão que abre o Modal - COMPONENTE OBRIGATÓRIO -->
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#sobreModal"
+              >
+                Saiba Mais Sobre Mim
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== EXPERIÊNCIA E FORMAÇÃO ========== -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Coluna 1: Formação -->
+            <div class="col-12 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <h3 class="h4 mb-3 fw-bold">Formação</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <h5 class="mb-1">Curso de Bootstrap 5</h5>
+                      <p class="text-muted mb-0">Fundação Bradesco | 2024</p>
+                    </li>
+                    <li class="mb-3">
+                      <h5 class="mb-1">Desenvolvimento Web</h5>
+                      <p class="text-muted mb-0">[Sua Instituição] | [Ano]</p>
+                    </li>
+                    <li class="mb-3">
+                      <h5 class="mb-1">[Outra Formação]</h5>
+                      <p class="text-muted mb-0">[Instituição] | [Ano]</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna 2: Interesses -->
+            <div class="col-12 col-md-6 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <h3 class="h4 mb-3 fw-bold">Interesses</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">Desenvolvimento Front-end</li>
+                    <li class="mb-2">Design Responsivo</li>
+                    <li class="mb-2">User Experience (UX)</li>
+                    <li class="mb-2">Aprendizado Contínuo</li>
+                    <li class="mb-2">Tecnologias Modernas</li>
+                    <li class="mb-2">Open Source</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== VALORES ========== -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="display-6 fw-bold mb-3">Meus Valores</h2>
+              <p class="lead text-muted">Princípios que guiam meu trabalho</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="text-center p-4">
+                <h4 class="fw-bold">Criatividade</h4>
+                <p class="text-muted">
+                  Busco soluções inovadoras e criativas para cada desafio.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="text-center p-4">
+                <h4 class="fw-bold">Qualidade</h4>
+                <p class="text-muted">
+                  Compromisso com código limpo e bem documentado.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div class="text-center p-4">
+                <h4 class="fw-bold">Colaboração</h4>
+                <p class="text-muted">
+                  Acredito no poder do trabalho em equipe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER - SEÇÃO OBRIGATÓRIA ========== -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Seu Nome</h5>
+            <p class="text-muted">
+              Desenvolvedor web apaixonado por criar experiências digitais
+              incríveis.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-muted text-decoration-none">
+                  Início
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="sobre.html" class="text-muted text-decoration-none">
+                  Sobre
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="projetos.html" class="text-muted text-decoration-none">
+                  Projetos
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="contato.html" class="text-muted text-decoration-none">
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Redes Sociais</h5>
+            <div class="d-flex gap-3">
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                title="GitHub"
+              >
+                GitHub
+              </a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                title="LinkedIn"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                title="Instagram"
+              >
+                Instagram
+              </a>
+              <a
+                href="#"
+                class="text-white text-decoration-none"
+                title="Twitter"
+              >
+                Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 bg-secondary" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 text-muted">
+              &copy; 2024 <strong>Seu Nome</strong>. Todos os direitos
+              reservados.
+            </p>
+            <p class="mb-0 text-muted small">Desenvolvido usando Bootstrap 5</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== MODAL - COMPONENTE OBRIGATÓRIO ========== -->
+    <!-- Modal é aberto pelo botão "Saiba Mais Sobre Mim" -->
+    <div
+      class="modal fade"
+      id="sobreModal"
+      tabindex="-1"
+      aria-labelledby="sobreModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="sobreModalLabel">
+              Mais Sobre Minha Jornada
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <h6 class="fw-bold mb-3">Minha Jornada no Desenvolvimento Web</h6>
+            <p>
+              Comecei minha jornada no desenvolvimento web em 2024, quando
+              descobri minha paixão por criar experiências digitais. Desde
+              então, tenho me dedicado a aprender as melhores práticas e
+              tecnologias mais modernas do mercado.
+            </p>
+
+            <h6 class="fw-bold mb-3 mt-4">O que me motiva</h6>
+            <ul>
+              <li>Resolver problemas complexos através do código</li>
+              <li>Criar interfaces bonitas e funcionais</li>
+              <li>Aprender constantemente novas tecnologias</li>
+              <li>Ajudar outros desenvolvedores iniciantes</li>
+              <li>Contribuir para a comunidade open source</li>
+            </ul>
+
+            <h6 class="fw-bold mb-3 mt-4">Próximos Passos</h6>
+            <p>
+              Estou focado em aprofundar meus conhecimentos em JavaScript e
+              frameworks modernos como React e Vue.js. Meu objetivo é me tornar
+              um desenvolvedor Full Stack completo e trabalhar em projetos que
+              façam diferença na vida das pessoas.
+            </p>
+
+            <h6 class="fw-bold mb-3 mt-4">Filosofia de Trabalho</h6>
+            <p>
+              Acredito que o melhor código é aquele que resolve problemas reais
+              de forma elegante e eficiente. Sempre busco equilibrar
+              funcionalidade, performance e experiência do usuário em todos os
+              meus projetos.
+            </p>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <a href="contato.html" class="btn btn-primary">
+              Entre em Contato
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle (inclui Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

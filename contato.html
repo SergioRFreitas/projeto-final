@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Meu Portfólio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"> Seu Nome </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="habilidades.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="display-4 fw-bold mb-3">Entre em Contato</h1>
+              <p class="lead text-muted">
+                Vamos trabalhar juntos? Envie uma mensagem!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO DE CONTATO - COMPONENTE OBRIGATÓRIO -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Coluna do Formulário -->
+            <div class="col-12 col-lg-8 mx-auto">
+              <div class="card shadow border-0">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="fw-bold mb-4 text-center">Envie sua Mensagem</h3>
+
+                  <form>
+                    <!-- Campo 1: Nome Completo -->
+                    <div class="mb-3">
+                      <label for="nome" class="form-label fw-bold">
+                        Nome Completo *
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                      />
+                    </div>
+
+                    <!-- Campo 2: E-mail -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-bold">
+                        E-mail *
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="seuemail@exemplo.com"
+                        required
+                      />
+                    </div>
+
+                    <!-- Campo 3: Telefone -->
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label fw-bold">
+                        Telefone
+                      </label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefone"
+                        placeholder="(00) 00000-0000"
+                      />
+                    </div>
+
+                    <!-- Campo 4: Assunto -->
+                    <div class="mb-3">
+                      <label for="assunto" class="form-label fw-bold">
+                        Assunto *
+                      </label>
+                      <select class="form-select" id="assunto" required>
+                        <option selected disabled value="">
+                          Selecione um assunto
+                        </option>
+                        <option value="orcamento">Orçamento de Projeto</option>
+                        <option value="duvida">Dúvida Técnica</option>
+                        <option value="oportunidade">
+                          Oportunidade de Trabalho
+                        </option>
+                        <option value="parceria">Parceria</option>
+                        <option value="outros">Outros</option>
+                      </select>
+                    </div>
+
+                    <!-- Campo 5: Mensagem -->
+                    <div class="mb-4">
+                      <label for="mensagem" class="form-label fw-bold">
+                        Mensagem *
+                      </label>
+                      <textarea
+                        class="form-control"
+                        id="mensagem"
+                        rows="5"
+                        placeholder="Digite sua mensagem aqui..."
+                        required
+                      ></textarea>
+                      <div class="form-text">Mínimo de 20 caracteres</div>
+                    </div>
+
+                    <!-- Checkbox de concordância -->
+                    <div class="mb-4 form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="concordo"
+                        required
+                      />
+                      <label class="form-check-label" for="concordo">
+                        Concordo em compartilhar minhas informações *
+                      </label>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                      <button
+                        type="reset"
+                        class="btn btn-outline-secondary btn-lg"
+                      >
+                        Limpar
+                      </button>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Enviar Mensagem
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFORMAÇÕES DE CONTATO -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <h2 class="display-6 fw-bold mb-3">Outras Formas de Contato</h2>
+              <p class="lead text-muted">
+                Você também pode me encontrar através de:
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Card Email -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-2">E-mail</h5>
+                  <p class="text-muted mb-0">seuemail@exemplo.com</p>
+                  <p class="text-muted small">Respondo em até 24h</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card GitHub -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-2">GitHub</h5>
+                  <p class="text-muted mb-0">github.com/seuusuario</p>
+                  <p class="text-muted small">Confira meus projetos</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card LinkedIn -->
+            <div class="col-12 col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                  <h5 class="fw-bold mb-2">LinkedIn</h5>
+                  <p class="text-muted mb-0">linkedin.com/in/seuusuario</p>
+                  <p class="text-muted small">Vamos conectar!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes Sociais Adicionais -->
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <h4 class="fw-bold mb-4">Me siga nas redes sociais</h4>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#" class="btn btn-outline-dark btn-lg"> GitHub </a>
+                <a href="#" class="btn btn-outline-primary btn-lg">
+                  LinkedIn
+                </a>
+                <a href="#" class="btn btn-outline-danger btn-lg">
+                  Instagram
+                </a>
+                <a href="#" class="btn btn-outline-info btn-lg"> Twitter </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAPA (OPCIONAL) -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="fw-bold mb-3">Localização</h3>
+              <p class="text-muted mb-4">[Sua Cidade], [Seu Estado], Brasil</p>
+              <!-- Aqui você pode adicionar um iframe do Google Maps se desejar -->
+              <div class="alert alert-info">
+                <strong>Dica:</strong> Você pode adicionar um mapa do Google
+                Maps aqui se quiser!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Seu Nome</h5>
+            <p class="text-muted">
+              Desenvolvedor web apaixonado por criar experiências digitais
+              incríveis.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold mb-3">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-muted text-decoration-none"
+                  >Início</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="sobre.html" class="text-muted text-decoration-none"
+                  >Sobre</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="projetos.html" class="text-muted text-decoration-none"
+                  >Projetos</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="contato.html" class="text-muted text-decoration-none"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5 class="fw-bold mb-3">Redes Sociais</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white text-decoration-none">GitHub</a>
+              <a href="#" class="text-white text-decoration-none">LinkedIn</a>
+              <a href="#" class="text-white text-decoration-none">Instagram</a>
+              <a href="#" class="text-white text-decoration-none">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 text-muted">
+              &copy; 2024 <strong>Seu Nome</strong>. Todos os direitos
+              reservados.
+            </p>
+            <p class="mb-0 text-muted small">Desenvolvido usando Bootstrap 5</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
