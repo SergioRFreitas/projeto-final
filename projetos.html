@@ -289,7 +289,9 @@
                   <div class="mb-3">
                     <span class="badge bg-warning text-dark me-1">HTML5</span>
                     <span class="badge bg-warning text-dark me-1">CSS3</span>
-                    <span class="badge bg-warning text-dark me-1">Bootstrap</span>
+                    <span class="badge bg-warning text-dark me-1"
+                      >Bootstrap</span
+                    >
                   </div>
                   <button
                     class="btn btn-warning text-dark"
@@ -356,8 +358,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <p class="mb-0 text-white">
-              &copy; 2025 <strong>Sérgio</strong>. Todos os direitos
-              reservados.
+              &copy; 2025 <strong>Sérgio</strong>. Todos os direitos reservados.
             </p>
             <p class="mb-0 text-white small">Desenvolvido usando Bootstrap 5</p>
           </div>
@@ -367,7 +368,12 @@
 
     <!-- MODAIS DOS PROJETOS - COMPONENTE OBRIGATÓRIO -->
     <!-- Modal Projeto 1 -->
-    <div class="modal fade" id="projeto1Modal" tabindex="-1" data-bs-backdrop="static">
+    <div
+      class="modal fade"
+      id="projeto1Modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-primary text-white">
@@ -375,7 +381,7 @@
             <button
               type="button"
               class="btn-close btn-close-white"
-              data-bs-dismiss="modal" 
+              data-bs-dismiss="modal"
             ></button>
           </div>
           <div class="modal-body">
@@ -408,18 +414,31 @@
             <button
               type="button"
               class="btn btn-secondary"
-              data-bs-dismiss="modal" 
+              data-bs-dismiss="modal"
             >
               Fechar
             </button>
-            <a href="projeto1.html" class="btn btn-primary">Abrir a página</a>
+            <a
+              href="projeto1.html"
+              class="btn btn-primary"
+              onclick="
+              var modalEl = document.getElementById('projeto1Modal');
+              var modal = bootstrap.Modal.getInstance(modalEl);
+              if(modal){ modal.hide(); }"
+              >Abrir a página</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal Projeto 2 -->
-    <div class="modal fade" id="projeto2Modal" tabindex="-1" data-bs-backdrop="static">
+    <div
+      class="modal fade"
+      id="projeto2Modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-success text-white">
@@ -457,14 +476,27 @@
             >
               Fechar
             </button>
-            <a href="#" class="btn btn-success">Abrir a página</a>
+            <a
+              href="projeto2.html"
+              class="btn btn-success"
+              onclick="
+              var modalEl = document.getElementById('projeto2Modal');
+              var modal = bootstrap.Modal.getInstance(modalEl);
+              if(modal){ modal.hide(); }"
+              >Abrir a página</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal Projeto 3 -->
-    <div class="modal fade" id="projeto3Modal" tabindex="-1" data-bs-backdrop="static">
+    <div
+      class="modal fade"
+      id="projeto3Modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-danger text-white">
@@ -502,14 +534,27 @@
             >
               Fechar
             </button>
-            <a href="#" class="btn btn-danger">Abrir a página</a>
+            <a
+              href="projeto3.html"
+              class="btn btn-danger"
+              onclick="
+              var modalEl = document.getElementById('projeto3Modal');
+              var modal = bootstrap.Modal.getInstance(modalEl);
+              if(modal){ modal.hide(); }"
+              >Abrir a página</a
+            >
           </div>
         </div>
       </div>
     </div>
 
     <!-- Modal Projeto 4 -->
-    <div class="modal fade" id="projeto4Modal" tabindex="-1" data-bs-backdrop="static">
+    <div
+      class="modal fade"
+      id="projeto4Modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-warning text-dark">
@@ -547,7 +592,14 @@
             >
               Fechar
             </button>
-            <a href="#" class="btn btn-warning text-dark">Abrir a página</a>
+            <a
+              href="projeto4.html"
+              class="btn btn-warning text-dark"
+              onclick=" var modalEl = document.getElementById('projeto4Modal');
+              var modal = bootstrap.Modal.getInstance(modalEl);
+              if(modal){ modal.hide(); }"
+              >Abrir a página</a
+            >
           </div>
         </div>
       </div>
